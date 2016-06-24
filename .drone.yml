@@ -1,12 +1,12 @@
 image: golang:1.5
 git:
-  path: github.com/vjscjp/voteapi24
+  path: github.com/vjscjp304/voteapi24
 script:
   - echo "build commands"
   - echo "no build command"
   - echo "no test command"
 clone:
-  path: github.com/vjscjp/voteapi24
+  path: github.com/vjscjp304/voteapi24
 build:
   image: golang:1.5
   commands:
