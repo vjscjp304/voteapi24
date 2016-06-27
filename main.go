@@ -134,7 +134,7 @@ func dbConnection() (db *sql.DB, err error) {
 
 		//ex: "postgres://postgres:postgres@test--pgtest--pgsingle--1164ae-0.service.consul:4000/postgresDB?sslmode=disable"
 		connStr := fmt.Sprintf("postgres://%s:%s@%s:%s/%s?sslmode=disable", db_user, db_pwd, db_host, db_port, db_name)
-		 
+		 log.Println(connStr)
 		db, err = sql.Open("postgres", connStr)
 		if err = db.Ping(); err == nil {
 			if i > 0 {
